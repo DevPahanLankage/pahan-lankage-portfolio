@@ -2,7 +2,7 @@
 
 This is a repository created to track down a responsive portfolio website I will be creating
 
-Youtube Tutorial skeleton done!
+## Youtube Tutorial skeleton done!
 
 -Currently on Lorum Ipsum
 
@@ -10,6 +10,6 @@ Youtube Tutorial skeleton done!
 
 -Responsive to smaller screen
 
-Currently working on;
+## Currently working on;
 
 -Adding my details
