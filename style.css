@@ -29,7 +29,7 @@ body {
   left: 0;
   padding: 4rem 15%;
   background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur (10px);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -123,7 +123,7 @@ section {
 }
 
 .home-content p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -345,6 +345,7 @@ section {
   max-width: 300px;
   border-radius: 2em;
   object-fit: cover;
+  filter: blur(10px);
 }
 
 .project-card h3 {
