@@ -1,15 +1,8 @@
 # portfolio-tutorial
 
-This is a repository created to track down a responsive portfolio website I will be creating
-
-## Skeleton done!
-
--Currently on Lorum Ipsum
-
--Finished setting up index,css and script files
-
--Responsive to smaller screen
+The public repository for my portfolio website I launched; heavily based on HTML/CSS, a touch of Javascript to get things flowing, project management completely based on Git! Back-end PHP server from an open source server, shoutout to Web3Forms!!
 
 ## Currently working on;
 
--Adding my details
+-Education Section; A tree like structure including all my licenses & certificates!
+-More briefing about my projects, about me, etc.
