@@ -12,6 +12,9 @@
   --text-color: white;
   --main-color: #ea580c;
 }
+
+/* Main Page  */
+
 html {
   font-size: 60%;
   overflow-x: hidden;
@@ -21,6 +24,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
 }
+
+/* Header Section */
 
 .header {
   position: fixed;
@@ -60,6 +65,8 @@ span {
   color: transparent;
 }
 
+/* Navigation Bar */
+
 .navbar a {
   font-size: 1.8rem;
   color: var(--text-color);
@@ -95,6 +102,8 @@ section {
   min-height: 100vh;
   padding: 10rem 15%;
 }
+
+/* Home Section */
 
 .home {
   display: flex;
@@ -140,6 +149,8 @@ section {
     0 0 100px var(--main-color);
 }
 
+/* Icon Styling */
+
 .social-icons a {
   display: inline-flex;
   justify-content: center;
@@ -160,6 +171,8 @@ section {
   transform: scale(1.2) translateY(-5px);
   box-shadow: 0 0 25px var(--main-color);
 }
+
+/* Button Styling */
 
 .btn-group {
   display: flex;
@@ -196,6 +209,8 @@ section {
   background-color: var(--main-color);
   color: black;
 }
+
+/* About Section */
 
 .about {
   display: flex;
@@ -396,6 +411,8 @@ section {
   margin: 1.5rem 0;
   resize: none;
 }
+
+/* Footer Section */
 
 .footer {
   background-color: var(--second-bg-color);
