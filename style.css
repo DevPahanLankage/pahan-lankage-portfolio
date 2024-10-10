@@ -249,6 +249,8 @@ section {
   margin: 5rem 0;
 }
 
+/* Services Section */
+
 .services {
   background-color: var(--bg-color);
   color: black;
@@ -307,6 +309,8 @@ section {
   font-size: 2rem;
 }
 
+/* Projects Section */
+
 .projects {
   background-color: var(--second-bg-color);
 }
@@ -346,6 +350,10 @@ section {
   border-radius: 2em;
   object-fit: cover;
   filter: blur(10px);
+}
+
+#bikeloversden {
+  filter: none;
 }
 
 .project-card h3 {
