@@ -236,7 +236,6 @@ section {
   justify-content: center;
   align-items: center;
   gap: 10rem;
-  background-color: var(--second-bg-color);
 }
 
 .about-img img {
@@ -286,7 +285,6 @@ section {
 /* Services Section */
 
 .services {
-  background-color: var(--bg-color);
   color: black;
 }
 
@@ -346,7 +344,6 @@ section {
 /* Projects Section */
 
 .projects {
-  background-color: var(--second-bg-color);
 }
 
 .projects-box {
@@ -409,7 +406,6 @@ section {
 /* Contact Form  */
 
 .contact {
-  background-color: var(--bg-color);
 }
 
 .contact h2 {
@@ -547,7 +543,6 @@ section {
 
 /* Skills Section */
 .skills {
-  background-color: var(--second-bg-color);
 }
 
 .skills-container {
@@ -632,9 +627,6 @@ section {
 
 /* Education Timeline Section */
 .education {
-  background-color: var(--bg-color);
-  min-height: 100vh;
-  padding: 10rem 15% 5rem;
 }
 
 .timeline {
