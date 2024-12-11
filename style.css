@@ -41,6 +41,11 @@ body {
   z-index: 10000;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 #menu-icon {
   font-size: 3.5rem;
   color: var(--main-color);
@@ -74,6 +79,7 @@ span {
   font-weight: 500;
   transition: 0.3s ease-in-out;
   border-bottom: 3px solid transparent;
+  white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -95,6 +101,7 @@ span {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
+  margin-left: 4rem;
 }
 
 .gradient-btn i {
@@ -470,6 +477,10 @@ section {
     display: block;
   }
 
+  .header {
+    padding: 4rem 5%;
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
@@ -481,18 +492,22 @@ section {
     border-left: 2px solid var(--main-color);
     border-bottom: 2px solid var(--main-color);
     display: none;
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .navbar.active {
+    display: flex;
+  }
+
   .navbar a {
     display: block;
     font-size: 2rem;
-    margin: 3rem 0;
-    color: var(--text-color);
-  }
-  .navbar.active {
-    display: block;
+    margin: 1.5rem 0;
   }
 
   .gradient-btn {
+    margin-left: 2rem;
     font-size: 1.6rem;
     padding: 0.8rem 1.5rem;
   }
