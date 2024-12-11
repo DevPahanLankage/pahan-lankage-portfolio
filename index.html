@@ -16,8 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
+    <div id="particles-js"></div>
 
     <!-- Navigation Bar -->
 
@@ -46,14 +48,14 @@
     <!-- Home Page Section -->
 
     <section class="home" id="home">
-      <div class="home-content">
+      <div class="home-content" data-aos="fade-right">
         <h1>Hi, I'm <span>Pahan Lankage</span></h1>
         <h3>I'm a <span>Developer</span></h3>
         <p>
           I collaborate with startups to bring their visions to life, building dynamic and engaging digital products through full-stack development, blending creativity on the front end with robust functionality on the back end.
         </p>
 
-        <div class="social-icons">
+        <div class="social-icons" data-aos="fade-up" data-aos-delay="200">
           <a href="https://github.com/DevPahanLankage" target="_blank">
             <i class="bx bxl-github"></i>
           </a>
@@ -71,14 +73,12 @@
           </a>
         </div>
 
-
-        <a href="#about" class="btn"
-          >See more about me <i class="bx bxs-chevrons-right"></i>
+        <a href="#about" class="btn" data-aos="fade-up" data-aos-delay="400">
+          See more about me <i class="bx bxs-chevrons-right"></i>
         </a>
-
       </div>
 
-      <div class="home-img">
+      <div class="home-img" data-aos="fade-left">
         <img src="assets/picture1.jpg" alt="" />
       </div>
     </section>
@@ -86,11 +86,11 @@
     <!-- About Me Section -->
 
     <section class="about" id="about">
-      <div class="about-img">
+      <div class="about-img" data-aos="fade-right">
         <img src="assets/image.png" alt="" />
       </div>
 
-      <div class="about-content">
+      <div class="about-content" data-aos="fade-left">
         <h2>About <span>me</span></h2>
 
         <p>
@@ -99,7 +99,7 @@
           My long-term goal is to have an answer for every challenge that comes my way as a developer. Outside of coding, I keep myself energized by hitting the gym, vibing to tech house and progressive music, and enjoying a night out with friends. Balancing focus and fun helps fuel my creativity and drive to keep improving
         </p>
 
-        <a href="assets/Lankage Pahan Didulanga CV.pdf" download class="btn cv-btn">
+        <a href="assets/Lankage Pahan Didulanga CV.pdf" download class="btn cv-btn" data-aos="fade-up" data-aos-delay="200">
           <i class='bx bx-download'></i> Download CV
         </a>
       
@@ -109,10 +109,10 @@
     <!-- Services Section -->
 
     <section class="services" id="services">
-      <h2 class="heading">Services</h2>
+      <h2 class="heading" data-aos="fade-up">Services</h2>
 
       <div class="services-container">
-        <div class="service-box">
+        <div class="service-box" data-aos="zoom-in-up">
           <div class="service-info">
             <i class="bx bx-bulb"></i>
             <h4>Solutions Architecture </h4>
@@ -120,7 +120,7 @@
               Focused on problem-solving by analyzing challenges and developing effective solutions. I'm learning cloud architecture with AWS and Azure, gaining skills in cloud engineering to design scalable and efficient systems that meet diverse needs.</p>
           </div>
         </div>
-        <div class="service-box">
+        <div class="service-box" data-aos="zoom-in-up" data-aos-delay="200">
           <div class="service-info">
             <i class="bx bx-code"></i>
             <h4>Front-End Development</h4>
@@ -129,7 +129,7 @@
             </p>
           </div>
         </div>
-        <div class="service-box">
+        <div class="service-box" data-aos="zoom-in-up" data-aos-delay="400">
           <div class="service-info">
             <i class="bx bx-code-curly"></i>
             <h4>Back-End Development</h4>
@@ -143,10 +143,10 @@
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
-      <h2 class="heading">My <span>Skills</span></h2>
+      <h2 class="heading" data-aos="fade-up">My <span>Skills</span></h2>
 
       <div class="skills-container">
-        <div class="skills-box">
+        <div class="skills-box" data-aos="flip-left">
           <h3>Frontend Development</h3>
           <div class="skills-content">
             <div class="skill">
@@ -172,7 +172,7 @@
           </div>
         </div>
 
-        <div class="skills-box">
+        <div class="skills-box" data-aos="flip-left" data-aos-delay="200">
           <h3>Backend Development</h3>
           <div class="skills-content">
             <div class="skill">
@@ -198,7 +198,7 @@
           </div>
         </div>
 
-        <div class="skills-box">
+        <div class="skills-box" data-aos="flip-left" data-aos-delay="400">
           <h3>Tools & Technologies</h3>
           <div class="skills-content">
             <div class="skill">
@@ -228,10 +228,10 @@
 
     <!-- Education Timeline Section -->
     <section class="education" id="education">
-      <h2 class="heading">My <span>Journey</span></h2>
+      <h2 class="heading" data-aos="fade-up">My <span>Journey</span></h2>
 
       <div class="timeline">
-        <div class="timeline-item left">
+        <div class="timeline-item left" data-aos="fade-right">
           <div class="timeline-content">
             <div class="timeline-date">2023 - Present</div>
             <h3>BSc (Hons) in Software Engineering</h3>
@@ -240,7 +240,7 @@
           </div>
         </div>
 
-        <div class="timeline-item right">
+        <div class="timeline-item right" data-aos="fade-left">
           <div class="timeline-content">
             <div class="timeline-date">2022 - 2023</div>
             <h3>Foundation in Software Engineering</h3>
@@ -249,7 +249,7 @@
           </div>
         </div>
 
-        <div class="timeline-item left">
+        <div class="timeline-item left" data-aos="fade-right">
           <div class="timeline-content">
             <div class="timeline-date">2019 - 2022</div>
             <h3>Advanced Level Studies</h3>
@@ -263,10 +263,10 @@
     <!-- Projects Section -->
 
     <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
+      <h2 class="heading" data-aos="fade-up">Projects</h2>
 
       <div class="projects-box">
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in-up">
           <img src="assets/project1.png" alt="" id="bikeloversden"/>
 
           <h3>Bike Lover's Den</h3>
@@ -282,7 +282,7 @@
 
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in-up" data-aos-delay="200">
           <img src="assets/project2.png" alt="" id="industri"/>
 
           <h3>Industri</h3>
@@ -295,7 +295,7 @@
           </a>  
         </div>
 
-        <div class="project-card">
+        <div class="project-card" data-aos="zoom-in-up" data-aos-delay="400">
           <img src="assets/project3.png" alt="" id="elevate360"/>
 
           <h3>Elevate360 - SMMA</h3>
@@ -346,9 +346,9 @@
     <!-- Contact Form Section -->
 
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
+      <h2 class="heading" data-aos="fade-up">Contact <span>Me</span></h2>
 
-      <form action="https://api.web3forms.com/submit" method="POST">
+      <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="200">
 
         <input type="hidden" name="access_key" value="38913fa7-2855-4cba-aa07-20dde09ad4f4">
         <input type="hidden" name="subject" value="New Submission from Web3Forms">
@@ -430,5 +430,83 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 150,
+        once: false
+      });
+
+      /* Particles.js Config */
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 50,
+            density: {
+              enable: true,
+              value_area: 800
+            }
+          },
+          color: {
+            value: "#ea580c"
+          },
+          shape: {
+            type: "circle"
+          },
+          opacity: {
+            value: 0.5,
+            random: false
+          },
+          size: {
+            value: 3,
+            random: true
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ea580c",
+            opacity: 0.2,
+            width: 1
+          },
+          move: {
+            enable: true,
+            speed: 2,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false
+          }
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "grab"
+            },
+            onclick: {
+              enable: true,
+              mode: "push"
+            },
+            resize: true
+          },
+          modes: {
+            grab: {
+              distance: 140,
+              line_linked: {
+                opacity: 0.5
+              }
+            },
+            push: {
+              particles_nb: 3
+            }
+          }
+        },
+        retina_detect: true
+      });
+    </script>
   </body>
 </html>
