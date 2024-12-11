@@ -17,8 +17,18 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
+    <div id="loading-screen">
+      <div class="loader">
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+        <div class="loader-square"></div>
+      </div>
+    </div>
+    <div id="progress-bar"></div>
     <div id="particles-js"></div>
 
     <!-- Navigation Bar -->
@@ -51,7 +61,7 @@
     <section class="home" id="home">
       <div class="home-content" data-aos="fade-right">
         <h1>Hi, I'm <span>Pahan Lankage</span></h1>
-        <h3>I'm a <span>Developer</span></h3>
+        <h3>I'm a <span class="typing"></span></h3>
         <p>
           I collaborate with startups to bring their visions to life, building dynamic and engaging digital products through full-stack development, blending creativity on the front end with robust functionality on the back end.
         </p>
@@ -521,74 +531,21 @@
         once: false
       });
 
-      /* Particles.js Config */
-      particlesJS("particles-js", {
-        particles: {
-          number: {
-            value: 50,
-            density: {
-              enable: true,
-              value_area: 800
-            }
-          },
-          color: {
-            value: "#ea580c"
-          },
-          shape: {
-            type: "circle"
-          },
-          opacity: {
-            value: 0.5,
-            random: false
-          },
-          size: {
-            value: 3,
-            random: true
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ea580c",
-            opacity: 0.2,
-            width: 1
-          },
-          move: {
-            enable: true,
-            speed: 2,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false
-          }
-        },
-        interactivity: {
-          detect_on: "canvas",
-          events: {
-            onhover: {
-              enable: true,
-              mode: "grab"
-            },
-            onclick: {
-              enable: true,
-              mode: "push"
-            },
-            resize: true
-          },
-          modes: {
-            grab: {
-              distance: 140,
-              line_linked: {
-                opacity: 0.5
-              }
-            },
-            push: {
-              particles_nb: 3
-            }
-          }
-        },
-        retina_detect: true
+      // Typing Animation
+      var typed = new Typed('.typing', {
+        strings: ['Developer', 'Full Stack Engineer', 'UI/UX Designer', 'Problem Solver'],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
       });
+
+      // Progress Bar
+      window.onscroll = function() {
+        let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("progress-bar").style.width = scrolled + "%";
+      };
     </script>
   </body>
 </html>

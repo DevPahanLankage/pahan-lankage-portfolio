@@ -146,8 +146,16 @@ section {
 }
 
 .home-content h3 {
-  margin: 1rem 0;
-  font-size: 4rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.home-content .typing {
+  color: var(--main-color);
+  white-space: nowrap;
 }
 
 .home-content p {
@@ -428,11 +436,68 @@ section {
   padding: 2.5rem;
   font-size: 1.8rem;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   border-radius: 2rem;
   border: 2px solid var(--main-color);
   margin: 1.5rem 0;
   resize: none;
+  transition: all 0.3s ease;
+}
+
+.contact form .input-box input:focus,
+.contact form textarea:focus {
+  box-shadow: 0 0 15px var(--main-color);
+  transform: scale(1.01);
+}
+
+.contact form .input-box input:valid,
+.contact form textarea:valid {
+  border-color: #4caf50;
+}
+
+.contact form .input-box input:invalid:not(:placeholder-shown),
+.contact form textarea:invalid:not(:placeholder-shown) {
+  border-color: #f44336;
+}
+
+.form-message {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  color: white;
+  transform: translateY(150%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.form-message.success {
+  background-color: #4caf50;
+  transform: translateY(0);
+}
+
+.form-message.error {
+  background-color: #f44336;
+  transform: translateY(0);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
 }
 
 /* Footer Section */
@@ -862,5 +927,87 @@ section {
   .cert-box {
     width: 100%;
     max-width: 500px;
+  }
+}
+
+/* Progress Bar */
+#progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--main-color);
+  box-shadow: 0 0 10px var(--main-color);
+  z-index: 10001;
+  transition: width 0.2s ease-out;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+}
+
+.loader-square {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  background-color: var(--main-color);
+  animation: loader 1.5s infinite;
+}
+
+.loader-square:nth-child(1) {
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+
+.loader-square:nth-child(2) {
+  top: 0;
+  right: 0;
+  animation-delay: 0.2s;
+}
+
+.loader-square:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  animation-delay: 0.4s;
+}
+
+.loader-square:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  animation-delay: 0.6s;
+}
+
+@keyframes loader {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
   }
 }
