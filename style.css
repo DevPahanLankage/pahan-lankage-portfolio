@@ -403,6 +403,14 @@ section {
   filter: none;
 }
 
+#viaroma {
+  filter: none;
+}
+
+#aspirevolonte {
+  filter: none;
+}
+
 .project-card h3 {
   font-size: 3rem;
 }
